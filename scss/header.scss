@@ -39,7 +39,7 @@
     transition: all .6s;
     &:hover {
       transition: all .6s;
-      text-shadow: 0 0 .65px #6C4132, 0 0 .65px #6C4132;
+      text-shadow: 0 0 .70px #6C4132, 0 0 .65px #6C4132;
       background-color: rgba(224, 174, 149, 0.43);
     }
     &:nth-last-child(2) {
@@ -60,6 +60,12 @@
 }
 .list__item:nth-last-child(2) > a {
   color: white;
+  transition: all .6s;
+  &:hover {
+    transition: all .6s;
+    text-shadow: 0 0 .70px #6C4132, 0 0 .65px #6C4132;
+    color: #6C4132;
+  }
 }
 .header__basket {
   path {

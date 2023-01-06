@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
   <title>Столовая</title>
 </head>
 
@@ -43,10 +46,67 @@
         <img class="hero__image" src="../img/hero.png" alt="Picture of food">
       </div>
     </section>
-    <section class="menu">
-      <div class="wrapper"></div>
+    <section class="menu" id="menu">
+      <div class="wrapper">
+        <div class="menu__top">
+          <h2 class="menu__title">Меню</h2>
+          <div class="search">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M25 22H23.42L22.86 21.46C24.82 19.18 26 16.22 26 13C26 5.82 20.18 0 13 0C5.82 0 0 5.82 0 13C0 20.18 5.82 26 13 26C16.22 26 19.18 24.82 21.46 22.86L22 23.42V25L32 34.98L34.98 32L25 22ZM13 22C8.02 22 4 17.98 4 13C4 8.02 8.02 4 13 4C17.98 4 22 8.02 22 13C22 17.98 17.98 22 13 22Z"
+                fill="#E0AE95" />
+            </svg>
+            <input class="menu__search" type="text" placeholder="Поиск...">
+          </div>
+        </div>
+        <div class="menu__cards">
+          <ul class="btn__list">
+            <li><button class="btn btn-active">Популярное</button></li>
+            <li><button class="btn">Выпечка</button></li>
+            <li><button class="btn">Сладкое и снеки</button></li>
+            <li><button class="btn">Напитки</button></li>
+            <li><button class="btn">Готовая еда</button></li>
+          </ul>
+          <div class="product__list">
+            <div class="card">
+              <img class="card__photo" src="../img/card1.png" alt="product image">
+              <p class="card__title">Сэндвич Цезарь с курицей</p>
+              <div class="description">
+                <p class="price">190 p</p>
+                <p>190 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card2.png" alt="product image">
+              <p class="card__title">Пирож­ки с вишне­вой начин­кой</p>
+              <div class="description">
+                <p class="price">62 p</p>
+                <p>100 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card3.png" alt="product image">
+              <p class="card__title">Блинчи­ки с брусни­кой и яблоком</p>
+              <div class="description">
+                <p class="price">138 p</p>
+                <p>160 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="btn all">Посмотреть всё</button>
+      </div>
     </section>
-    <section class="player">
+    <section class="player" id="player">
       <div class="wrapper"></div>
     </section>
   </main>

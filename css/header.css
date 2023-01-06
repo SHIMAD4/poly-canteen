@@ -43,7 +43,7 @@
 }
 .header__list .list__item:hover {
   transition: all 0.6s;
-  text-shadow: 0 0 0.65px #6C4132, 0 0 0.65px #6C4132;
+  text-shadow: 0 0 0.7px #6C4132, 0 0 0.65px #6C4132;
   background-color: rgba(224, 174, 149, 0.43);
 }
 .header__list .list__item:nth-last-child(2) {
@@ -63,6 +63,12 @@
 
 .list__item:nth-last-child(2) > a {
   color: white;
+  transition: all 0.6s;
+}
+.list__item:nth-last-child(2) > a:hover {
+  transition: all 0.6s;
+  text-shadow: 0 0 0.7px #6C4132, 0 0 0.65px #6C4132;
+  color: #6C4132;
 }
 
 .header__basket path {
