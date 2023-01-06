@@ -17,10 +17,12 @@
   <header class="header" id="header">
     <div class="BGcolor"></div>
     <div class="wrapper">
-      <a href="./index.html" class="header__logo">
-        <img src="../img/logo.png" alt="logo">
-      </a>
-      <span class="js__link js__link--header">ул.Прянишкова,2А</span>
+      <div class="header__logo">
+        <a href="./index.html" class="header__image">
+          <img src="../img/logo.png" alt="logo">
+        </a>
+        <span class="js__link js__link--header">ул.Прянишкова,2А</span>
+      </div>
       <ul class="header__list list">
         <li class="list__item"><a href="#header">Главная</a></li>
         <li class="list__item"><a href="#menu">Меню</a></li>
@@ -62,13 +64,14 @@
         </div>
         <div class="menu__cards">
           <ul class="btn__list">
-            <li><button class="btn btn-active">Популярное</button></li>
-            <li><button class="btn">Выпечка</button></li>
-            <li><button class="btn">Сладкое и снеки</button></li>
-            <li><button class="btn">Напитки</button></li>
-            <li><button class="btn">Готовая еда</button></li>
+            <li><button class="btn btn-active js-trigger" onclick="openTab(event, popular)">Популярное</button></li>
+            <li><button class="btn js-trigger" onclick="openTab(event, baking)">Выпечка</button></li>
+            <li><button class="btn js-trigger" onclick="openTab(event, sweets)">Сладкое и снеки</button></li>
+            <li><button class="btn js-trigger" onclick="openTab(event, drinks)">Напитки</button></li>
+            <li><button class="btn js-trigger" onclick="openTab(event, prepared)">Готовая еда</button></li>
+            <li><button class="btn all">Посмотреть всё</button></li>
           </ul>
-          <div class="product__list">
+          <div class="product__list" id="popular" style="display: flex;">
             <div class="card">
               <img class="card__photo" src="../img/card1.png" alt="product image">
               <p class="card__title">Сэндвич Цезарь с курицей</p>
@@ -103,8 +106,258 @@
               </button>
             </div>
           </div>
+          <div class="product__list" id="baking">
+            <div class="card">
+              <img class="card__photo" src="../img/card4.png" alt="product image">
+              <p class="card__title">Шоколадный круассан</p>
+              <div class="description">
+                <p class="price">80 p</p>
+                <p>80 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card5.png" alt="product image">
+              <p class="card__title">Кленовый пекан</p>
+              <div class="description">
+                <p class="price">84 p</p>
+                <p>80 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card6.png" alt="product image">
+              <p class="card__title">Улитка с корицей</p>
+              <div class="description">
+                <p class="price">63 p</p>
+                <p>70 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card7.png" alt="product image">
+              <p class="card__title">Булоч­ка с маком Братья Карава­евы</p>
+              <div class="description">
+                <p class="price">72 p</p>
+                <p>120 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card8.png" alt="product image">
+              <p class="card__title">Язычок с сахаром</p>
+              <div class="description">
+                <p class="price">31 p</p>
+                <p>60 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card9.png" alt="product image">
+              <p class="card__title">Пирож­ки с
+                вишне­вой начин­кой</p>
+              <div class="description">
+                <p class="price">62 p</p>
+                <p>100 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+          </div>
+          <div class="product__list" id="sweets">
+            <div class="card">
+              <img class="card__photo" src="../img/card10.png" alt="product image">
+              <p class="card__title">Супер Контик со сгущён­ным молоком</p>
+              <div class="description">
+                <p class="price">39 p</p>
+                <p>100 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card11.png" alt="product image">
+              <p class="card__title">Печенье молоч­ное Юбилей­ное глазурь</p>
+              <div class="description">
+                <p class="price">97 p</p>
+                <p>232 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card12.png" alt="product image">
+              <p class="card__title">Мини-палоч­ки Saltletts солёные</p>
+              <div class="description">
+                <p class="price">45 p</p>
+                <p>70 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card13.png" alt="product image">
+              <p class="card__title">Марме­лад жеватель­ный Mamba микс</p>
+              <div class="description">
+                <p class="price">80 p</p>
+                <p>72 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card14.png" alt="product image">
+              <p class="card__title">Шоколад Alpen Gold фундук-изюм</p>
+              <div class="description">
+                <p class="price">89 p</p>
+                <p>85 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card15.png" alt="product image">
+              <p class="card__title">Маршмел­лоу Пухлый Кролик Пломбир</p>
+              <div class="description">
+                <p class="price">55 p</p>
+                <p>85 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+          </div>
+          <div class="product__list" id="drinks">
+            <div class="card">
+              <img class="card__photo" src="../img/card16.png" alt="product image">
+              <p class="card__title">Сок Яблоко-Виноград Сады Придо­нья</p>
+              <div class="description">
+                <p class="price">29 p</p>
+                <p>200 мл</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card17.png" alt="product image">
+              <p class="card__title">Сок Фруто­Няня яблоко и персик неосвет­лённый</p>
+              <div class="description">
+                <p class="price">45 p</p>
+                <p>200 мл</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card18.png" alt="product image">
+              <p class="card__title">Чай холод­ный Riсh tea чёрный лимон</p>
+              <div class="description">
+                <p class="price">79 p</p>
+                <p>500 мл</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card19.png" alt="product image">
+              <p class="card__title">Вода Спорт Шишкин лес</p>
+              <div class="description">
+                <p class="price">59 p</p>
+                <p>1 л</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card20.png" alt="product image">
+              <p class="card__title">Вода Сенеж­ская негази­рован­ная</p>
+              <div class="description">
+                <p class="price">29 p</p>
+                <p>500 мл</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+          </div>
+          <div class="product__list" id="prepared">
+            <div class="card">
+              <img class="card__photo" src="../img/card1.png" alt="product image">
+              <p class="card__title">Сэндвич Цезарь с курицей</p>
+              <div class="description">
+                <p class="price">190 p</p>
+                <p>190 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card3.png" alt="product image">
+              <p class="card__title">Блинчи­ки с брусни­кой и яблоком</p>
+              <div class="description">
+                <p class="price">138 p</p>
+                <p>160 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card21.png" alt="product image">
+              <p class="card__title">Блинчи­ки Цезарь</p>
+              <div class="description">
+                <p class="price">139 p</p>
+                <p>180 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card22.png" alt="product image">
+              <p class="card__title">Каша овсяная с яблоком и корицей</p>
+              <div class="description">
+                <p class="price">129 p</p>
+                <p>250 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+            <div class="card">
+              <img class="card__photo" src="../img/card23.png" alt="product image">
+              <p class="card__title">Макаро­ны в сливоч­ном соусе</p>
+              <div class="description">
+                <p class="price">150 p</p>
+                <p>200 г</p>
+              </div>
+              <button class="add">
+                <img src="../img/addIcon.svg" alt="add to basket icon">
+              </button>
+            </div>
+          </div>
         </div>
-        <button class="btn all">Посмотреть всё</button>
       </div>
     </section>
     <section class="player" id="player">
@@ -149,6 +402,7 @@
         сохранение файлов cookie в настройках своего браузера.</p>
     </div>
   </footer>
+  <script src="../js/tabs.js"></script>
   <script src="../js/delayScroll.js"></script>
   <script src="../js/index.js"></script>
 </body>

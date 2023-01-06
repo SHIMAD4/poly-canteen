@@ -26,10 +26,13 @@
 }
 
 .footer__logo {
-  margin-right: 70px;
-  color: #6C4132;
   position: relative;
 }
-.footer__logo:visited {
+
+.footer__image {
+  margin-right: 70px;
+  color: #6C4132;
+}
+.footer__image:visited {
   color: #6C4132;
 }

@@ -24,10 +24,12 @@
     }
   }
 }
-.footer__logo {
+.footer__logo{
+  position: relative;
+}
+.footer__image {
   margin-right: 70px;
   color: #6C4132;
-  position: relative;
   &:visited {
     color: #6C4132;
   }

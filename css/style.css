@@ -52,17 +52,20 @@ ul li {
 }
 
 .header__logo {
-  color: #6C4132;
   position: relative;
 }
-.header__logo:visited {
+
+.header__image {
+  color: #6C4132;
+}
+.header__image:visited {
   color: #6C4132;
 }
 
 .js__link--header {
   position: absolute;
-  top: 75px;
-  left: 285px;
+  top: 55px;
+  left: 100px;
   font-size: 16px;
   font-weight: 400;
   transition: all 0.6s;
@@ -125,7 +128,7 @@ ul li {
 
 .hero {
   width: 100%;
-  height: calc(100vh - 305px);
+  height: 420px;
 }
 
 .hero__title {
@@ -169,7 +172,7 @@ ul li {
 
 .menu {
   background-color: #FFF0E9;
-  height: 730px;
+  height: 100%;
 }
 
 .menu__top {
@@ -209,6 +212,7 @@ ul li {
 .btn__list {
   flex-direction: column;
   align-items: baseline;
+  position: relative;
 }
 .btn__list .btn {
   font-weight: bold;
@@ -231,6 +235,20 @@ ul li {
   transition: all 0.6s;
   background-color: #ffffff;
 }
+.btn__list .all {
+  position: absolute;
+  top: 85%;
+  left: 250%;
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: #6C4132;
+  font-family: "Montserrat Alternates", sans-serif;
+}
 .btn__list .btn-active {
   background-color: white;
   -webkit-box-shadow: 6px 5px 6px 2px rgba(34, 60, 80, 0.2);
@@ -239,11 +257,13 @@ ul li {
 }
 
 .product__list {
-  display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  display: none;
+  justify-content: center;
 }
 .product__list .card {
   margin-right: 30px;
+  margin-bottom: 100px;
   width: 260px;
   height: 415px;
   border-radius: 20px;
@@ -303,14 +323,18 @@ ul li {
 .all {
   display: block;
   margin: 0 auto;
-  margin-top: 50px;
   cursor: pointer;
+  height: 60px;
   padding: 15px 35px;
   border-radius: 10px;
   font-size: 20px;
   color: white;
   background-color: #6C4132;
   font-family: "Montserrat Alternates", sans-serif;
+}
+
+.none {
+  display: none;
 }
 
 .player > .wrapper .description--1 {
@@ -380,10 +404,13 @@ ul li {
 }
 
 .footer__logo {
-  margin-right: 70px;
-  color: #6C4132;
   position: relative;
 }
-.footer__logo:visited {
+
+.footer__image {
+  margin-right: 70px;
+  color: #6C4132;
+}
+.footer__image:visited {
   color: #6C4132;
 }
