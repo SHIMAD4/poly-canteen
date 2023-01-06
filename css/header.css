@@ -7,25 +7,6 @@
   justify-content: space-between;
 }
 
-.header__list {
-  display: flex;
-  justify-content: space-between;
-}
-.header__list .list__item {
-  font-weight: 500;
-  cursor: pointer;
-}
-.header__list .list__item:hover {
-  font-weight: 600;
-}
-.header__list .list__item:nth-last-child(2) {
-  margin-right: 100px;
-}
-
-.list__item:nth-last-child(2) {
-  color: white;
-}
-
 .header__logo {
   position: relative;
 }
@@ -38,6 +19,43 @@
   transition: all 0.6s;
 }
 .header__logo span:hover {
-  font-size: 17px;
+  text-shadow: 0 0 0.65px #6C4132, 0 0 0.65px #6C4132;
+  font-size: 18px;
   transition: all 0.6s;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+}
+.header__list .list__item {
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 12px;
+  transition: all 0.6s;
+}
+.header__list .list__item:hover {
+  transition: all 0.6s;
+  text-shadow: 0 0 0.65px #6C4132, 0 0 0.65px #6C4132;
+  background-color: rgba(224, 174, 149, 0.43);
+}
+.header__list .list__item:nth-last-child(2) {
+  margin-right: 65px;
+}
+.header__list .list__item:nth-last-child(2):hover {
+  background-color: rgb(255, 255, 255);
+  color: #6C4132;
+}
+
+.list__item:nth-last-child(2) {
+  color: white;
+}
+
+.header__basket path {
+  transition: all 0.6s;
+}
+.header__basket:hover path {
+  transition: all 0.6s;
+  fill: #6C4132;
 }

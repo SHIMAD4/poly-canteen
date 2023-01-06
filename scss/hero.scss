@@ -1,0 +1,35 @@
+.hero {
+  width: 100%;
+}
+.hero__title {
+  margin-top: calc(100vh / 3.5);
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+.hero__subtitle {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.hero__btn {
+  background-color: #E0AE95;
+  padding: 20px 100px;
+  border-radius: 16px;
+  font-size: 24px;
+  color: white;
+  letter-spacing: 2px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  cursor: pointer;
+  transition: all .6s;
+  &:hover {
+    transition: all .6s;
+    background: #c59882;
+  }
+  &:active {
+    background: #8e6b5a;
+  }
+}
+.hero__image {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
