@@ -20,6 +20,9 @@
   font-family: 'Montserrat Alternates', sans-serif;
   cursor: pointer;
   transition: all .6s;
+  -webkit-box-shadow: 10px 10px 20px 3px rgba(34, 60, 80, 0.22);
+  -moz-box-shadow: 10px 10px 20px 3px rgba(34, 60, 80, 0.22);
+  box-shadow: 10px 10px 20px 3px rgba(34, 60, 80, 0.22);
   &:hover {
     transition: all .6s;
     background: #c59882;

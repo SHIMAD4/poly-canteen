@@ -8,19 +8,24 @@
 }
 
 .header__logo {
+  color: #6C4132;
   position: relative;
-  span {
-    position: absolute;
-    top: 50px;
-    left: 95px;
-    font-size: 16px;
-    font-weight: 400;
+  &:visited {
+    color: #6C4132;
+  }
+}
+.js__link {
+  position: absolute;
+  top: 75px;
+  left: 285px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all .6s;
+  cursor: pointer;
+  &:hover {
+    text-shadow: 0 0 .65px #6C4132, 0 0 .65px #6C4132;
+    font-size: 18px;
     transition: all .6s;
-    &:hover {
-      text-shadow: 0 0 .65px #6C4132, 0 0 .65px #6C4132;
-      font-size: 18px;
-      transition: all .6s;
-    }
   }
 }
 .header__list {
@@ -44,9 +49,16 @@
         color: #6C4132;
       }
     }
+    a {
+      color: #6C4132;
+      text-decoration: none;
+      &:visited {
+        color: #6C4132;
+      }
+    }
   }
 }
-.list__item:nth-last-child(2) {
+.list__item:nth-last-child(2) > a {
   color: white;
 }
 .header__basket {
