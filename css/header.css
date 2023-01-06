@@ -15,7 +15,7 @@
   color: #6C4132;
 }
 
-.js__link {
+.js__link--header {
   position: absolute;
   top: 75px;
   left: 285px;
@@ -24,7 +24,7 @@
   transition: all 0.6s;
   cursor: pointer;
 }
-.js__link:hover {
+.js__link--header:hover {
   text-shadow: 0 0 0.65px #6C4132, 0 0 0.65px #6C4132;
   font-size: 18px;
   transition: all 0.6s;

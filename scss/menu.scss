@@ -122,6 +122,14 @@
   -webkit-box-shadow: 6px 5px 6px 2px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 6px 5px 6px 2px rgba(34, 60, 80, 0.2);
   box-shadow: 6px 5px 6px 2px rgba(34, 60, 80, 0.2);
+  transition: all .6s;
+  &:hover {
+    transition: all .6s;
+    background-color: rgb(232, 232, 232);
+  }
+  &:active {
+    background-color: rgb(88, 88, 88);
+  }
 }
 
 .all {

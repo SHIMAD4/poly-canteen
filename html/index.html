@@ -9,22 +9,23 @@
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin></script>
   <title>Столовая</title>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="BGcolor"></div>
     <div class="wrapper">
       <a href="./index.html" class="header__logo">
         <img src="../img/logo.png" alt="logo">
       </a>
-      <span class="js__link">ул.Прянишкова,2А</span>
+      <span class="js__link js__link--header">ул.Прянишкова,2А</span>
       <ul class="header__list list">
-        <li class="list__item"><a href="#hero">Главная</a></li>
-        <li class="list__item"><a href="#">Меню</a></li>
-        <li class="list__item"><a href="#">Как дойти</a></li>
-        <li class="list__item"><a href="#">Условия</a></li>
+        <li class="list__item"><a href="#header">Главная</a></li>
+        <li class="list__item"><a href="#menu">Меню</a></li>
+        <li class="list__item"><a href="#player">Как дойти</a></li>
+        <li class="list__item"><a href="#footer">Условия</a></li>
         <li class="list__item">
           <a href="#" class="header__basket">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,12 +108,48 @@
       </div>
     </section>
     <section class="player" id="player">
-      <div class="wrapper"></div>
+      <div class="wrapper">
+        <ul class="player__list list">
+          <li class="list__item">
+            <img src="../img/playerIcon1.svg" alt="icon basket" class="player__icon">
+            <p class="player__title">Бери, что по душе</p>
+          </li>
+          <li class="list__item">
+            <img src="../img/playerIcon2.svg" alt="icon clock" class="player__icon">
+            <p class="player__title">Выбираешь, удобное время для получения</p>
+          </li>
+          <li class="list__item">
+            <img src="../img/playerIcon3.svg" alt="icon utensils" class="player__icon">
+            <p class="player__title">Наслаждаешься едой</p>
+          </li>
+        </ul>
+        <p class="description--1">Заказ нужно забрать в течение выбранного времени. В случае, не забранного заказа, на
+          следующий день заказ
+          анулируется и деньги не возвращаются.</p>
+        <p class="description--2"> * внешний вид блюда может отличаться от изображения на картинке</p>
+        <h2 class="player__heading">Как найти нас?</h2>
+        <div class="video">
+          <img class="video__image" src="../img/videoPrev.png" alt="video preview image">
+          <img class="video__icon" src="../img/playIcon.svg" alt="play icon">
+        </div>
+      </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="wrapper"></div>
+  <footer class="footer" id="footer">
+    <div class="wrapper">
+      <div class="footer__logo">
+        <a href="./index.html" class="footer__image">
+          <img src="../img/logo.png" alt="logo">
+        </a>
+        <span class="js__link js__link--footer">ул.Прянишкова,2А</span>
+      </div>
+      <p class="footer__discription">Буфет использует файлы cookie. Продолжая работу с этим сайтом, вы подтверждаете
+        использование сайтом cookies
+        вашего браузера, которые помогают нам делать этот сайт удобнее для пользователей. Однако вы можете запретить
+        сохранение файлов cookie в настройках своего браузера.</p>
+    </div>
   </footer>
+  <script src="../js/delayScroll.js"></script>
   <script src="../js/index.js"></script>
 </body>
 

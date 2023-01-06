@@ -1,0 +1,35 @@
+.footer {
+  background-color: #E0AE95;
+  padding: 60px 0px;
+}
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .wrapper .js__link--footer {
+  position: absolute;
+  bottom: 3px;
+  left: 95px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+.footer .wrapper .js__link--footer:hover {
+  text-shadow: 0 0 0.65px #6C4132, 0 0 0.65px #6C4132;
+  font-size: 18px;
+  transition: all 0.6s;
+}
+.footer .wrapper .footer__discription {
+  color: white;
+  font-weight: medium;
+}
+
+.footer__logo {
+  margin-right: 70px;
+  color: #6C4132;
+  position: relative;
+}
+.footer__logo:visited {
+  color: #6C4132;
+}

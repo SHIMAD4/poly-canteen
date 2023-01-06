@@ -1,0 +1,38 @@
+.player > .wrapper .description--1 {
+  margin-top: 55px;
+}
+.player > .wrapper .description--1, .player > .wrapper .description--2 {
+  font-size: 14px;
+  color: #E0AE95;
+}
+.player > .wrapper .player__heading {
+  margin-top: 100px;
+  margin-bottom: 70px;
+  font-size: 40px;
+}
+.player > .wrapper .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 85px;
+}
+.player > .wrapper .video .video__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.player__list {
+  margin-top: 130px;
+}
+.player__list .list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.player__list .list__item .player__icon {
+  margin-right: 30px;
+}

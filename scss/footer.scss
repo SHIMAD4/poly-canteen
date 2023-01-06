@@ -1,0 +1,34 @@
+.footer {
+  background-color: #E0AE95;
+  padding: 60px 0px;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    .js__link--footer {
+      position: absolute;
+      bottom: 3px;
+      left: 95px;
+      font-size: 16px;
+      font-weight: 400;
+      transition: all .6s;
+      cursor: pointer;
+      &:hover {
+        text-shadow: 0 0 .65px #6C4132, 0 0 .65px #6C4132;
+        font-size: 18px;
+        transition: all .6s;
+      }
+    }
+    .footer__discription {
+      color: white;
+      font-weight: medium;
+    }
+  }
+}
+.footer__logo {
+  margin-right: 70px;
+  color: #6C4132;
+  position: relative;
+  &:visited {
+    color: #6C4132;
+  }
+}
