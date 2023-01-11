@@ -1,0 +1,116 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: none;
+  background-color: #5c372b81;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.basket {
+  position: relative;
+  background-color: #fff;
+  width: 1100px;
+  height: 90vh;
+  border-radius: 30px;
+  overflow-y: scroll;
+}
+
+.basket__top {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .basket__title {
+    margin-left: 50px;
+    text-transform: uppercase;
+  }
+  .basket__reset {
+    background-color: #E0AE95;
+    color: white;
+    padding: 10px 40px;
+    margin-right: 50px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all .6s;
+    &:hover {
+      transition: all .6s;
+      background-color: #cf9a7f;
+    }
+    &:active {
+      background-color: #7d5c4c;
+    }
+  }
+}
+
+.temp {
+  margin: 40px 80px 50px 50px;
+  display: flex;
+  align-items: center;
+  .temp__image {
+    width: 200px;
+    height: 200px;
+  }
+  .temp__discription {
+    margin-top: 15px;
+    margin-left: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .temp__title {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .temp__pw {
+      width: 100px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      .temp__price {
+        font-weight: bold;
+      }
+    }
+  }
+  .temp__count {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .temp__counter {
+      background-color: #E0AE95;
+      padding: 18.5px 18.5px;
+      cursor: default;
+      color: white;
+    }
+    .temp__plus {
+      border-radius: 10px 0 0 10px;
+    }
+    .temp__minus {
+      border-radius: 0 10px 10px 0;
+    }
+    .temp__plus, .temp__minus {
+      font-size: 24px;
+      color: white;
+      background-color: #E0AE95;
+      padding: 14.5px 14.5px;
+      cursor: pointer;
+      transition: all .6s;
+      &:hover {
+        transition: all .6s;
+        background-color: #cf9a7f;
+      }
+      &:active {
+        background-color: #7d5c4c;
+      }
+    }
+  }
+}
