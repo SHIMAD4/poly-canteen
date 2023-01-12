@@ -1,6 +1,7 @@
 const btns = document.querySelectorAll('.add');
 const block = document.querySelector('.basket__wrapper');
 const product = document.querySelector('.description');
+const clearBtn = document.querySelector('.basket__reset');
 
 btns.forEach(el => {
   el.addEventListener('click', () => {
@@ -14,7 +15,6 @@ btns.forEach(el => {
       weight : card.querySelector('.description').querySelector('.weight').innerText,
       count  : card.querySelector('[data-counter]').innerText,
     }
-
     
     const itemInBusket = block.querySelector(`[id='${productInfo.id}']`)
     
@@ -34,14 +34,22 @@ btns.forEach(el => {
             </div>
           </div>
           <div class="temp__count">
-            <button class="btn temp__plus">+</button>
+            <button class="btn temp__plus" data-action="plus">+</button>
             <p class="temp__counter" data-counter="">1</p>
-            <button class="btn temp__minus">-</button>
+            <button class="btn temp__minus" data-action="minus">-</button>
           </div>
         </div>
       </div>`;
       block.insertAdjacentHTML('beforeend', cartTemp)
     }
 
+  })
+  clearBtn.addEventListener('click', (event) => {
+    if (event.target.closest('.basket__wrapper')) {
+      const itemInBusketAll = block.querySelectorAll('.temp')
+      for(let i = 0; i < itemInBusketAll.length; i++) {
+        itemInBusketAll[i].remove()
+      }
+    }
   })
 })
