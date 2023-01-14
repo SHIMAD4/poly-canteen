@@ -49,11 +49,34 @@
           <h2 class="basket__title">Корзина</h2>
           <button class="btn basket__reset">Очистить корзину</button>
         </div>
-        <!-- <div class="basket__bottom">
-          <h2 class="basket__title">Итого: </h2>
-          <button class="btn basket__submit">Оформить заказ</button>
-        </div> -->
+        <div class="tech_box"></div>
+        <div class="basket__bottom--first">
+          <h2 class="basket__title--finish">Итого: </h2>
+          <button class="btn basket__next">Оформить заказ</button>
+        </div>
       </div>
+      <form action="https://httpbin.org/post" class="basket__form visually-hidden" method="POST">
+        <label for="name">
+          ФИО*
+          <input type="text" required id="name" name="name">
+        </label>
+        <label for="group">
+          Номер группы*
+          <input type="text" required id="group" name="group">
+        </label>
+        <label for="email">
+          Электронная почта*
+          <input type="text" required id="email" name="email">
+        </label>
+        <p>Заказ нужно забрать в течении 30 мин.</p>
+        <div class="basket__bottom--second">
+          <h2 class="basket__title--finish">Итого: </h2>
+          <div class="basket__btns">
+            <button class="btn basket__back">Назад</button>
+            <button class="btn basket__submit" type="submit">Перейти к оплате</button>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
   <main>
@@ -61,7 +84,7 @@
       <div class="wrapper">
         <h1 class="hero__title">Заказывайте заранее</h1>
         <p class="hero__subtitle">Забирайте в удобное время</p>
-        <button class="btn hero__btn">Оформить</button>
+        <a class="btn hero__btn" href="#menu">Оформить</a>
         <img class="hero__image" src="../img/hero.png" alt="Picture of food">
       </div>
     </section>
@@ -85,7 +108,7 @@
             <li><button class="btn js-trigger" onclick="openTab(event, sweets)">Сладкое и снеки</button></li>
             <li><button class="btn js-trigger" onclick="openTab(event, drinks)">Напитки</button></li>
             <li><button class="btn js-trigger" onclick="openTab(event, prepared)">Готовая еда</button></li>
-            <li><button class="btn all">Посмотреть всё</button></li>
+            <li><button class="btn all visually-hidden">Посмотреть всё</button></li>
           </ul>
           <div class="product__list" id="popular" style="display: flex;">
             <div class="card" id="popular1">

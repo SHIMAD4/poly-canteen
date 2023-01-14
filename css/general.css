@@ -54,3 +54,10 @@ ul li {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.visually-hidden:invalid {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

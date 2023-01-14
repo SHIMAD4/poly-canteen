@@ -20,6 +20,9 @@
   border-radius: 30px;
   overflow-y: scroll;
 }
+.basket::-webkit-scrollbar {
+  width: 0;
+}
 
 .basket__top {
   margin-top: 50px;
@@ -112,5 +115,91 @@
   background-color: #cf9a7f;
 }
 .temp .temp__count .temp__plus:active, .temp .temp__count .temp__minus:active {
+  background-color: #7d5c4c;
+}
+
+.basket__bottom--first {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+.basket__bottom--first .basket__next {
+  display: flex;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #E0AE95;
+  color: white;
+  padding: 10px 40px;
+  margin-right: 50px;
+  font-family: "Montserrat Alternates", sans-serif;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.basket__bottom--first .basket__next:hover {
+  transition: all 0.6s;
+  background-color: #cf9a7f;
+}
+.basket__bottom--first .basket__next:active {
+  background-color: #7d5c4c;
+}
+
+.basket__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.basket__form label {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.basket__form input {
+  padding: 20px 20px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 24px;
+}
+.basket__form input:invalid {
+  border: 2px solid red;
+}
+
+.basket__bottom--second {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+.basket__btns {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+.basket__btns .basket__submit, .basket__btns .basket__back {
+  background-color: #E0AE95;
+  color: white;
+  padding: 10px 40px;
+  font-family: "Montserrat Alternates", sans-serif;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.basket__btns .basket__submit:hover, .basket__btns .basket__back:hover {
+  transition: all 0.6s;
+  background-color: #cf9a7f;
+}
+.basket__btns .basket__submit:active, .basket__btns .basket__back:active {
   background-color: #7d5c4c;
 }
