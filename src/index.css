@@ -11,3 +11,12 @@
 body {
   font-family: 'Montserrat Alternates', sans-serif;
 }
+
+::-webkit-scrollbar {
+  background-color: #c29781;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a7806d;
+  border-radius: 40px;
+}
