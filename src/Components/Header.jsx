@@ -14,8 +14,8 @@ function Header() {
         <nav>
             <ul className='flex flex-row justify-center items-center last:mr-0 w-100'>
                 {navLinks.map((link, index) => {
-                    return <li className='mr-16 hover:bg-[#e0ae9579] p-[10px] rounded-[10px] hover:font-semibold' key={index}>
-                                <a className='text-[20px] text-[#6C4132]' href="#">{link}</a>
+                    return <li className='flex flex-row justify-center items-center mr-10 w-[150px] last:mr-0' key={index}>
+                                <a className='hover:bg-[#e0ae9579] hover:font-semibold p-[10px] rounded-[10px] text-[20px] text-[#6C4132]' href="#">{link}</a>
                            </li>
                 })}
             </ul>
