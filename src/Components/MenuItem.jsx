@@ -3,7 +3,7 @@ import addToBasket from '../assets/menu/add-to-basket-icon.svg';
 
 function MenuItem({name, price, weight, img, key}) {
     return (
-        <div className="w-[270px] h-full bg-white rounded-[20px] flex flex-col justify-end items-center text-center" key={key}>
+        <div className="item w-[270px] h-full bg-white rounded-[20px] flex flex-col justify-end items-center text-center" key={key}>
             <img className='mb-[50px]' src={img} alt="item image" width={240} />
             <h2 className='mb-[50px] text-[20px] text-[#5C372B] font-semibold'>{name}</h2>
             <div className="w-full flex justify-between mb-[20px] px-[35px]">

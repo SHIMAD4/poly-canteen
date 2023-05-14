@@ -25,9 +25,6 @@ function Menu() {
       const categoryItems = items.filter((item) => item.category === categoriesId[indexBtn - 1]);
       setFilteredItems(categoryItems);
     }
-    
-    // Здесь вы можете использовать состояние filteredItems вместо items для отображения списка элементов на UI
-    
 
     const categoriesBtn = [
         'Популярное',
@@ -53,7 +50,7 @@ function Menu() {
                                 </li>
                     })}
                 </ul>
-                <div className="menu-item w-full h-[410px] flex flex-row justify-between items-center px-[70px] place-self-center">
+                <div className="menu-items w-full h-[410px] flex flex-row justify-between items-center px-[70px] place-self-center">
                     {
                         filteredItems.map((item, index) => <MenuItem name={item.name} price={item.price} weight={item.weight} img={item.image} key={index}/>)
                     }
